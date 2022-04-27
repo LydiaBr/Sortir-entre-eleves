@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+    <h1>Register</h1>
+
+    {{ form_start(registrationForm) }}
+       {{ form_widget(registrationForm) }}
+
+
+<div class="checkbox mb-3">
+    <label>
+        <input type="checkbox" name="_remember_me">Remember me
+    </label>
+</div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    {{ form_end(registrationForm) }}
+{% endblock %}
